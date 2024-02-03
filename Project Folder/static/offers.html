@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://nealanalytics.com/wp-content/uploads/2020/03/Women-shopping-in-mall-with-a-cart.jpg');
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .product {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            width: calc(25% - 20px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s, border 0.2s ease-in-out;
+            background-color: #fff;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            border: 1px solid black;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            font-family: 'Ubuntu', sans-serif;
+            color: #fff;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h2, p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .logout-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Today's Special Offers</h1>
+<div class="product-container">
+    <!-- Biscuits -->
+    <div class="product">
+        <img src="https://i0.wp.com/img.paisawapas.com/ovz3vew9pw/2023/03/13162451/Frame-1Sunfeast-biscuits.png?resize=998%2C454&ssl=1" alt="Biscuits">
+        <h2>Biscuits</h2>
+        <p>Special offer on various biscuits brands.</p>
+    </div>
+    <!-- Tea Powder -->
+    <div class="product">
+        <img src="https://5.imimg.com/data5/KK/LA/MY-11500481/tea-powder.jpg" alt="Tea Powder">
+        <h2>Tea Powder</h2>
+        <p>Special price on various tea powders.</p>
+    </div>
+    <!-- Cold Drinks -->
+    <div class="product">
+        <img src="https://st3.depositphotos.com/1063437/15487/i/450/depositphotos_154879212-stock-photo-bottles-of-assorted-global-soft.jpg" alt="Cold Drinks">
+        <h2>Cold Drinks</h2>
+        <p>10% off on all cold drink brands.</p>
+    </div>
+    <!-- Noodles -->
+    <div class="product">
+        <img src="https://assets.gqindia.com/photos/5f6afcb8b41de4ca60031a6f/16:9/w_1920,h_1080,c_limit/Best%20Instant%20Noodles%20in%20India%20(2).jpg" alt="Noodles">
+        <h2>Noodles</h2>
+        <p>Special offers on various noodle brands.</p>
+    </div>
+    <!-- Sauces and Chutney -->
+    <div class="product">
+        <img src="https://mishry.com/wp-content/uploads/2023/01/best-schezwan-chutney-review.jpg" alt="Sauces and Chutney">
+        <h2>Sauces and Chutney</h2>
+        <p>Explore a variety of sauces and chutneys.</p>
+    </div>
+    <!-- Amul Products -->
+    <div class="product">
+        <img src="https://images.livemint.com/img/2019/05/08/600x338/Amul-k0tB--621x414@LiveMint_1557306703079.jpg" alt="Amul Products">
+        <h2>Amul Products</h2>
+        <p>Get your favorite Amul products here.</p>
+    </div>
+</div>
+
+<!-- Logout link -->
+<div class="logout-link">
+    <a href="/logout">Logout</a>
+</div>
+
+</body>
+</html>
